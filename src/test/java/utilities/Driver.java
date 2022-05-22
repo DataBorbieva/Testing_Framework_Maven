@@ -1,8 +1,11 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,19 +22,29 @@ import java.util.concurrent.TimeUnit;
         //if my driver fully fresh untouched
         //get driver and quit driver method
         public static WebDriver getDriver(){
-            if(driver == null) {
-                //Telling your system where your chrome driver is located
-               // System.setProperty("webdriver.chrome.driver", "chromedriver_win32\\chromedriver.exe");
+            if(driver == null){
+                // Telling your system where your chrome driver is located
+                //System.setProperty("webdriver.chrome.driver", "/Users/techglobal/IdeaProjects/selenium_intro/chromedriver");
 
-            WebDriverManager.chromedriver().setup();
+                String browser = "chrome"; // define which browser you will run your test in
 
-
-
-
-                //create the object of the web browser that you are automating
-                driver = new ChromeDriver();
+                switch (browser){
+                    case "chrome":
+                        WebDriverManager.chromedriver().setup();
+                        driver = new ChromeDriver();
+                        break;
+                    case "firefox":
+                        WebDriverManager.firefoxdriver().setup();
+                        driver = new FirefoxDriver();
+                        break;
+                    case "safari":
+                        WebDriverManager.getInstance(SafariDriver.class).setup();
+                        driver = new SafariDriver();
+                        break;
+                    default:
+                        throw new NotFoundException("Browser IS NOT DEFINED properly!!!");
+                }
                 driver.manage().window().maximize();
-                //waiting only that web element to be existed
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             }
             return driver;

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 21 15:14:00 CDT 2022</td>
+<td>Started on:</td><td>Sun May 22 11:22:25 CDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17126 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30095 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: Failure on purpose
 	at scripts._01_AppleTest.X(_01_AppleTest.java:55)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86558824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace86558824'><pre>java.lang.AssertionError: Failure on purpose
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795011696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795011696'><pre>java.lang.AssertionError: Failure on purpose
 	at org.testng.Assert.fail(Assert.java:97)
 	at scripts._01_AppleTest.X(_01_AppleTest.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -109,7 +109,8 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuites(TestNG.java:1039)
 	at org.testng.TestNG.run(TestNG.java:1007)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -122,7 +123,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>scripts._01_AppleTest@f6c48ac</td></tr>
+<td>scripts._01_AppleTest@239963d8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,15 +133,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='scripts._02_TechGlobalTest.testAplicationFromHeading()'><b>testAplicationFromHeading</b><br>Test class: scripts._02_TechGlobalTest</td>
+<td></td>
+<td>0</td>
+<td>scripts._02_TechGlobalTest@3abbfa04</td></tr>
+<tr>
 <td title='scripts._01_AppleTest.testAppleTitle()'><b>testAppleTitle</b><br>Test class: scripts._01_AppleTest</td>
 <td></td>
 <td>1</td>
-<td>scripts._01_AppleTest@f6c48ac</td></tr>
+<td>scripts._01_AppleTest@239963d8</td></tr>
 <tr>
 <td title='scripts._01_AppleTest.testAppleURL()'><b>testAppleURL</b><br>Test class: scripts._01_AppleTest</td>
 <td></td>
-<td>0</td>
-<td>scripts._01_AppleTest@f6c48ac</td></tr>
+<td>1</td>
+<td>scripts._01_AppleTest@239963d8</td></tr>
+<tr>
+<td title='scripts._03_EtsyTest.testEtsyLogo()'><b>testEtsyLogo</b><br>Test class: scripts._03_EtsyTest</td>
+<td></td>
+<td>1</td>
+<td>scripts._03_EtsyTest@57fffcd7</td></tr>
 </table><p>
 </body>
 </html>

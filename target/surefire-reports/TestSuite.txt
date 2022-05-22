@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: scripts._01_AppleTest
+Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.48 sec <<< FAILURE!
-X(scripts._01_AppleTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.471 sec <<< FAILURE!
+X(scripts._01_AppleTest)  Time elapsed: 0.006 sec  <<< FAILURE!
 java.lang.AssertionError: Failure on purpose
 	at org.testng.Assert.fail(Assert.java:97)
 	at scripts._01_AppleTest.X(_01_AppleTest.java:55)

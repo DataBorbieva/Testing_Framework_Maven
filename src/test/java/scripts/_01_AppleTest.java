@@ -1,26 +1,9 @@
 package scripts;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.Driver;
 
-public class _01_AppleTest {
-
-
-    //Declare your driver
-    WebDriver driver;
-
-    // 1. Initial set up - before each test
-    @BeforeMethod
-    public void setup() {
-        driver = Driver.getDriver();
-    }
-
-
-
+public class _01_AppleTest extends Base {
 
 
     // 2. Validation of test - test
@@ -40,7 +23,7 @@ public class _01_AppleTest {
     }
 
     @Test
-    public void testAppleURL(){
+    public void testAppleURL() {
         driver.get("https://www.apple.com/");
         String expectedURL = "https://www.apple.com/";
         String actualURL = driver.getCurrentUrl();
@@ -49,17 +32,12 @@ public class _01_AppleTest {
     }
 
     @Test
-    public void X(){
+    public void X() {
         //We use this for known issues reporting purposes
         //fail() method is used to fail test on puspose
         Assert.fail("Failure on purpose");
     }
 
-    // 3. Teardown actions - after each test
-    @AfterMethod
-    public void teardown() {
-        Driver.quitDriver();
-    }
 }
 
 
