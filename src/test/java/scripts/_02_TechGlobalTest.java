@@ -25,7 +25,7 @@ public class _02_TechGlobalTest {
     }
 
     // 2. Validation of test - test
-    @Test
+    @Test(priority = 1, description = "TC123: Validate Application form heading")
     public void testAplicationFromHeading(){
         driver.get("https://www.techglobalschool.com/apply-now");
 

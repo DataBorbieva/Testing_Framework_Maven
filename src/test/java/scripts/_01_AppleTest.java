@@ -1,13 +1,14 @@
 package scripts;
 
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class _01_AppleTest extends Base {
 
 
     // 2. Validation of test - test
-    @Test
+    @Test(priority = 1)
     public void testAppleTitle() {
         driver.get("https://www.apple.com/");
 
@@ -22,7 +23,7 @@ public class _01_AppleTest extends Base {
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
-    @Test
+    @Test(priority = 2)
     public void testAppleURL() {
         driver.get("https://www.apple.com/");
         String expectedURL = "https://www.apple.com/";
@@ -31,7 +32,8 @@ public class _01_AppleTest extends Base {
         Assert.assertEquals(actualURL, expectedURL);
     }
 
-    @Test
+    @Ignore
+    @Test(priority = 3)
     public void X() {
         //We use this for known issues reporting purposes
         //fail() method is used to fail test on puspose
