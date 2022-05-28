@@ -15,6 +15,7 @@ public class GoogleSearchResultPage {
 
     @FindBy(id = "result-stats") //About 1,220,000,000 results (0.47 seconds)
     public WebElement result;
+
 }
 
 

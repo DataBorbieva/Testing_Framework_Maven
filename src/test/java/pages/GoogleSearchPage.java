@@ -18,4 +18,7 @@ public class GoogleSearchPage {
     @FindBy(className = "gLFyf gsfi")
     public WebElement googleSearchInputBox;
 
+
+    @FindBy(linkText = "Store")
+    public WebElement storeLink;
 }
