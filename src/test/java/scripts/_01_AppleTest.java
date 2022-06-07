@@ -33,7 +33,7 @@ public class _01_AppleTest extends Base {
     }
 
     @Ignore
-    @Test(priority = 3)
+    //@Test(priority = 3)
     public void X() {
         //We use this for known issues reporting purposes
         //fail() method is used to fail test on puspose

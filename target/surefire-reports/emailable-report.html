@@ -8,16 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,584</td><td></td><td></td></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">All Functionalities</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">99,816</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m0">testAppleTitle</a></td><td rowspan="1">1653252847958</td><td rowspan="1">986</td></tr><tr class="passedeven"><td><a href="#m1">testAppleURL</a></td><td rowspan="1">1653252853824</td><td rowspan="1">758</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m2">testAplicationFromHeading</a></td><td rowspan="1">1653252859424</td><td rowspan="1">778</td></tr><tr class="passedeven"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m3">testEtsyLogo</a></td><td rowspan="1">1653252865043</td><td rowspan="1">1904</td></tr><tr class="passedeven"><td><a href="#m4">testEtsySearch</a></td><td rowspan="1">1653252871809</td><td rowspan="1">1815</td></tr><tr class="passedeven"><td><a href="#m5">testEtsySearchResult</a></td><td rowspan="1">1653252878505</td><td rowspan="1">3473</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m0">testMainHeader</a></td><td rowspan="1">1654216611336</td><td rowspan="1">1965</td></tr><tr class="failedodd"><td rowspan="1">scripts._07_DropdownTest</td><td><a href="#m1">testExpediaDropdowns</a></td><td rowspan="1">1654216656816</td><td rowspan="1">35458</td></tr><tr><th colspan="4">All Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m2">testAppleURL</a></td><td rowspan="1">1654216598031</td><td rowspan="1">762</td></tr><tr class="passedodd"><td rowspan="1">scripts._04_GoogleSearchTest</td><td><a href="#m3">testGoogleStoreLink</a></td><td rowspan="1">1654216603677</td><td rowspan="1">2830</td></tr><tr class="passedeven"><td rowspan="1">scripts._05_CheckBoxTest</td><td><a href="#m4">testCheckBoxInHeroApp</a></td><td rowspan="1">1654216618164</td><td rowspan="1">9372</td></tr><tr class="passedodd"><td rowspan="1">scripts._06_RadioButtonTest</td><td><a href="#m5">testFacebookGenderRadioButtons</a></td><td rowspan="1">1654216632341</td><td rowspan="1">9551</td></tr><tr class="passedeven"><td rowspan="1">scripts._07_DropdownTest</td><td><a href="#m6">testUnsecurePasswordErrorMessage</a></td><td rowspan="1">1654216646710</td><td rowspan="1">5296</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">scripts._02_TechGlobalTest#testAplicationFromHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>All Functionalities</h2><h3 id="m0">scripts._03_EtsyTest#testMainHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:99)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts._07_DropdownTest#testExpediaDropdowns</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred\-class\-input\-trigger&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-5SV0R4LA&apos;, ip: &apos;192.168.165.88&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\datab\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a3135942b5ec174b372238d7b516234
+*** Element info: {Using=id, value=preferred-class-input-trigger}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:81)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts._04_GoogleSearchTest#testGoogleStoreLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._05_CheckBoxTest#testCheckBoxInHeroApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._06_RadioButtonTest#testFacebookGenderRadioButtons</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">scripts._07_DropdownTest#testUnsecurePasswordErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

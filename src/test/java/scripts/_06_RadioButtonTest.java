@@ -23,9 +23,12 @@ public void testFacebookGenderRadioButtons(){
         Waiter.pause(2);
 
         for(WebElement element : faceBookPage.genderRadioButtons){
-        Assert.assertTrue(element.isDisplayed(), "Element IS NOT displayed");
+       /* Assert.assertTrue(element.isDisplayed(), "Element IS NOT displayed");   HARD ASSERTION
         Assert.assertTrue(element.isEnabled(), "Element IS NOT enabled");
-        Assert.assertFalse(element.isSelected(), "Element IS selected");
+        Assert.assertFalse(element.isSelected(), "Element IS selected"); */
+                softAssert.assertTrue(element.isDisplayed(), "Element IS NOT displayed");
+                softAssert.assertTrue(element.isEnabled(), "Element IS NOT enabled");   //SOFT ASSERTION
+                softAssert.assertFalse(element.isSelected(), "Element IS selected"); // We did it soft because it is not for main critical functionalities
         }
 
         faceBookPage.genderRadioButtons.get(0).click();
