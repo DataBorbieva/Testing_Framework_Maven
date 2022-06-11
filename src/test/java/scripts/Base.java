@@ -1,6 +1,7 @@
 package scripts;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +11,8 @@ import org.testng.asserts.SoftAssert;
 import pages.*;
 import utilities.Driver;
 
+import javax.swing.*;
+import java.nio.channels.AcceptPendingException;
 import java.util.concurrent.TimeUnit;
 
 public class Base {
@@ -18,6 +21,7 @@ public class Base {
     WebDriverWait wait;
     Wait fluentWait;
     SoftAssert softAssert;
+    Actions actions;
     EtsySearchPage etsySearchPage;
     TGApplicationPage tgApplicationPage;
     GoogleSearchPage googleSearchPage;
@@ -26,6 +30,9 @@ public class Base {
     FaceBookPage faceBookPage;
     ExpediaPage expediaPage;
     JacquemusBagPage jacquemusBagPage;
+    RediffHomePage rediffHomePage;
+    AmazonHomePage amazonHomePage;
+    TGHomePage tgHomePage;
 
     @BeforeMethod
     public void setup(){
@@ -33,6 +40,7 @@ public class Base {
         WebDriverWait wait = new WebDriverWait(driver,15);
         Wait fluentWait = new FluentWait(driver).withTimeout(10, TimeUnit.SECONDS).pollingEvery(2,TimeUnit.SECONDS).ignoring(Exception.class);
         softAssert = new SoftAssert();
+        actions = new Actions(driver);
         etsySearchPage = new EtsySearchPage(driver);
         tgApplicationPage = new TGApplicationPage(driver);
         googleSearchPage = new GoogleSearchPage(driver);
@@ -41,6 +49,11 @@ public class Base {
         faceBookPage = new FaceBookPage(driver);
         expediaPage = new ExpediaPage(driver);
         jacquemusBagPage = new JacquemusBagPage(driver);
+        rediffHomePage = new RediffHomePage(driver);
+        amazonHomePage = new AmazonHomePage(driver);
+        tgHomePage = new TGHomePage(driver);
+
+
     }
 
     @AfterMethod

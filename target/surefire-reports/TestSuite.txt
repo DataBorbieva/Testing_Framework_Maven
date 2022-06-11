@@ -1,21 +1,63 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 100.19 sec <<< FAILURE! - in TestSuite
-testMainHeader(scripts._03_EtsyTest)  Time elapsed: 1.97 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Father's Day Gifts] but found [Shop Home Sales!]
-	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:99)
+Tests run: 23, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 321.756 sec <<< FAILURE! - in TestSuite
+testAmazonAddressModal(scripts._08_Alerts)  Time elapsed: 10.707 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:161)
 
-testExpediaDropdowns(scripts._07_DropdownTest)  Time elapsed: 35.457 sec  <<< FAILURE!
+testFileDownload(scripts._11_FileUpload)  Time elapsed: 30.872 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#preferred\-class\-input\-trigger"}
-  (Session info: chrome=101.0.4951.67)
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='download/myDiamondFile.txt']"}
+  (Session info: chrome=102.0.5005.63)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-5SV0R4LA', ip: '192.168.165.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\datab\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a3135942b5ec174b372238d7b516234
-*** Element info: {Using=id, value=preferred-class-input-trigger}
-	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:81)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\datab\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 15acd3d1d822ff9e13217a0ffcc5a355
+*** Element info: {Using=xpath, value=//a[@href='download/myDiamondFile.txt']}
+	at scripts._11_FileUpload.testFileDownload(_11_FileUpload.java:28)
+
+sendKeysToAnElement(scripts._12_Actions_Class)  Time elapsed: 30.93 sec  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5SV0R4LA', ip: '192.168.165.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at scripts._12_Actions_Class.sendKeysToAnElement(_12_Actions_Class.java:135)
+Caused by: java.lang.reflect.InvocationTargetException
+	at scripts._12_Actions_Class.sendKeysToAnElement(_12_Actions_Class.java:135)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".gLFyf\ gsfi"}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5SV0R4LA', ip: '192.168.165.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\datab\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7843b0e6d31de5cbbd31cfadf2545ec9
+*** Element info: {Using=class name, value=gLFyf gsfi}
+	at scripts._12_Actions_Class.sendKeysToAnElement(_12_Actions_Class.java:135)
+
+practiceKeyDownAndKeyUp(scripts._12_Actions_Class)  Time elapsed: 30.891 sec  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5SV0R4LA', ip: '192.168.165.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:165)
+Caused by: java.lang.reflect.InvocationTargetException
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:165)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".gLFyf\ gsfi"}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5SV0R4LA', ip: '192.168.165.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\datab\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a15a585a9469c7bc70d3d34556bc3f2
+*** Element info: {Using=class name, value=gLFyf gsfi}
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:165)
 
