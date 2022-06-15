@@ -15,4 +15,5 @@ public class TGApplicationPage {
     @FindBy(xpath = "//span[text()='Application Form']")
     public WebElement heading1;
 
+
 }

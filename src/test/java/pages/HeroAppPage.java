@@ -60,6 +60,9 @@ public class HeroAppPage {
     @FindBy(xpath = "//a[@href='download/myDiamondFile.txt']")
     public  WebElement downloadFile;
 
+    @FindBy(css = "#table1 th")
+    public List<WebElement> table1Headers;
+
 
     public void clickOnAlertButton(String buttonText){
         for(WebElement element: alertButtons){
@@ -79,5 +82,13 @@ public class HeroAppPage {
         }
     }
 
+    @FindBy(id = "username")
+    public WebElement username;
+
+    @FindBy(id = "password")
+    public WebElement password;
+
+    @FindBy(css = ".radius")
+    public WebElement loginButton;
 
 }

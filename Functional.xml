@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional">
+    <test verbose="2" preserve-order="true" name="C:/Users/datab/IdeaProjects/testng_framework/src/test/java">
+
+        <groups>
+            <run>
+                <include name="Functional"></include>
+            </run>
+        </groups>
+
+
+
+
+
+
+        <packages>
+
+            <package name="scripts"></package>
+            <package name="testng_learning"></package>
+        </packages>
+
+
+    </test>
+</suite>

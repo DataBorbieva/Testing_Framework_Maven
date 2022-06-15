@@ -166,4 +166,33 @@ Validate the value attribute for search input box is "TECHGLOBALTECHGLOBAL"
 
         Waiter.pause(2);
         Assert.assertEquals(googleSearchPage.googleSearchInputBox.getText(),"TECHGLOBALTECHGLOBAL");
-    }  }
+    }
+/*
+Go to https://www.etsy.com/
+Hover over on "Jewelry & Accessories" menu item
+Validate below categories are displayed with their expected texts
+Accessories
+Bags & Purses
+Necklaces
+Rings
+Earrings
+Bracelets
+Body Jewelry
+All Jewelry
+ */
+
+
+    @Test(priority = 8,description = "Action | Etsy")
+    public void navigateToList() {
+        driver.get("https://www.etsy.com/");
+        actions.moveToElement(etsySearchPage.mainHeaderLinks.get(1)).perform();
+
+        String[] text = {"Accessories", "Bags & Purses", "Necklaces", "Rings", "Earrings", "Bracelets", "Body Jewelry", "All Jewelry"};
+        for (int i = 0; i < 8; i++) {
+            Waiter.waitUntilTextToBePresentInElement(driver, 10, etsySearchPage.jewelryAndAccessoriesItems.get(i), text[i]);
+            Assert.assertEquals(etsySearchPage.jewelryAndAccessoriesItems.get(i).getText(), text[i]);
+        }
+    }
+
+
+}

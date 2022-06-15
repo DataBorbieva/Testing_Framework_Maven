@@ -21,12 +21,11 @@ public class _11_FileUpload extends Base{
 
     }
     @Test(priority = 2, description = "File download")
-    public void testFileDownload(){
+    public void testFileDownload() {
         driver.get("http://the-internet.herokuapp.com/");
 
         heroAppPage.clickOnLink("File Download");
         heroAppPage.downloadFile.click();
     }
-
 
 }

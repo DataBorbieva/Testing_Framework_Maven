@@ -8,7 +8,7 @@ public class _01_AppleTest extends Base {
 
 
     // 2. Validation of test - test
-    @Test(priority = 1)
+    @Test(priority = 1,groups = "Functional")
     public void testAppleTitle() {
         driver.get("https://www.apple.com/");
 
